@@ -1,0 +1,10 @@
+
+FROM openjdk:17
+
+WORKDIR /application
+
+COPY target/pruebatecnica-1.0.0.jar application.jar
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "application.jar"]
